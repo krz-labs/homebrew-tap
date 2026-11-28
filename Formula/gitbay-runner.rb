@@ -25,11 +25,11 @@ class GitbayRunner < Formula
   def caveats
     <<~EOS
       Generate this machine's key and config, and print the key to attach:
-        gitbay-runner init -remote git@gitbay.org
+        gitbay-runner init -remote git@<your gitbay host>
       Attach it to each repository it should build, as a repository admin:
         gitbay repo runner add owner/name < ~/.config/gitbay-runner/id_ed25519.pub
       Then:
-        brew services start krz/tap/gitbay-runner
+        brew services start krz-labs/tap/gitbay-runner
     EOS
   end
 
