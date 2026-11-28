@@ -3,8 +3,8 @@
 #   brew tap krz-labs/tap && brew install --cask orgstar
 
 cask "orgstar" do
-  version "1.5.0"
-  sha256 "ff8905dc015f26896f1bd336104ab77a5fc4cd0206e3a3f42666503fa0431194"
+  version "1.6.0"
+  sha256 "449fd72a2c8e70f2a7c6f5f9c9b173122011f3a9970eaca13b0e96bd8193966e"
 
   url "https://files.krz.sh/orgstar/orgstar-#{version}.dmg"
   name "orgstar"
