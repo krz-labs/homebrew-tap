@@ -3,8 +3,8 @@
 #   brew tap krz/tap https://gitbay.org/krz/homebrew-tap.git && brew install --cask orgstar
 
 cask "orgstar" do
-  version "1.4.0"
-  sha256 "190e1f4e059211244653be0e6f8ec811df1b365f5254118df02f10b5f0f6ae69"
+  version "1.5.0"
+  sha256 "ff8905dc015f26896f1bd336104ab77a5fc4cd0206e3a3f42666503fa0431194"
 
   url "https://files.krz.sh/orgstar/orgstar-#{version}.dmg"
   name "orgstar"
@@ -15,6 +15,7 @@ cask "orgstar" do
   depends_on macos: :tahoe
 
   app "orgstar.app"
+  binary "#{appdir}/orgstar.app/Contents/Helpers/orgstar"
 
   zap trash: [
     "~/.config/orgstar",
